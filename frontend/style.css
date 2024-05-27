@@ -1,0 +1,139 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ce2121;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+ */
+
+ html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    display: flex;
+    color: white;
+    font-family: monospace;
+    
+  }
+  
+  main {
+    background-color: red;
+   
+  }
+
+  .p5Canvas{
+    background-color: #0004E0;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .poema {
+    background-color:#0004E0;
+    width: 200px;
+    height: 100vh;
+    overflow: scroll;
+    
+  }
+
+  .poema2 {
+    background-color:#0b770d;
+    width: 200px;
+    height: 75vh;
+    overflow: scroll;
+  }
+
+  .poema3 {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 100px;
+    overflow: scroll;
+    margin-right: 10px;
+  }
+
+  .texto{
+    
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: right;
+  }
+
+ul{
+ color: white;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  
+  }
+
+  a {
+    color: white;
+    
+  }
+
+
+  .popup-position {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  
+  #wrapper{
+    width: 960px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  #popup-wrapper {
+    width:500px;
+    margin: 70px auto;
+    text-align: left;
+    color: black;
+  }
+
+  #popup-wrapper a{
+    color: black;
+  }
+  #popup-container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+  }
