@@ -8,7 +8,7 @@ console.log(x)
 
 
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  createCanvas(600, 600, WEBGL);
   angleMode(DEGREES);
   centerX = -200;
   centerY = 100;
@@ -221,7 +221,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(600, 600);
 
   poe = createVideo("img/mundo4/mundo4-video.mp4");
   poe.hide();
