@@ -143,11 +143,38 @@ function draw() {
 
  */
 
+
+function preload() {
+  
+  dibujo1 = loadImage("dibujos/dibujo1.jpeg");
+  dibujo2 = loadImage("dibujos/dibujo2.jpeg");
+  dibujo3 = loadImage("dibujos/dibujo3.jpeg");
+  dibujo4 = loadImage("dibujos/dibujo4.jpeg");
+  dibujo5 = loadImage("dibujos/dibujo5.jpeg");
+  dibujo6 = loadImage("dibujos/dibujo6.jpeg");
+  dibujo7 = loadImage("dibujos/dibujo7.jpeg");
+  dibujo8 = loadImage("dibujos/dibujo8.jpeg");
+  dibujo9 = loadImage("dibujos/dibujo9.jpeg");
+  
+}
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500, WEBGL);
 }
 
 function draw() {
-  background(220);
+  background(20);
+    
+    pointLight(255, 100, 200, -200, 0, 0);
+    pointLight(170, 255, 0, 200, 0, 0);
+    specularMaterial(0);
+    noStroke();
+    orbitControl();
   
+    //ESFERA
+    push();
+    ambientLight(255);
+    texture(dibujo1);
+    box(500);
+    pop();
 }

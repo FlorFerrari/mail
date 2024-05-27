@@ -9,14 +9,15 @@
   </head>
   <body>
     
-    <!-- <img src="giphy.gif" alt="gif" width="100px" height="150px"> -->
     
-
-    <script src="sketch.js"></script>
     
-    <script src="sendMail.js"></script>
+    <div class="container">
+        <h1>Enviar Correo</h1>
+        <input type="email" id="email" placeholder="Ingresa tu correo">
+        <button id="sendEmailButton">Enviar Correo</button>
+        <p id="message"></p>
+    </div>
     
-
     <div class="poema"> <p>
       El lenguaje es un virus
       El paraíso es exactamente como
@@ -114,27 +115,12 @@
       <li><a href=""><img src="dibujos/dibujo1.jpeg" alt="" height="50px"></a></li>
       <li><a href=""><img src="dibujos/dibujo1.jpeg" alt="" height="50px"></a></li>
     </ul>
-    <img src="giphy-code.gif" alt="gif" width="100px" height="150px">
+    <img src="dibujos/giphy-code.gif" alt="gif" width="100px" height="150px"> 
   </div>
     
 
-  <div id="popup-box1" class="popup-position">
-    <div id="popup-wrapper">
-      <div id="popup-container">
-        <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');">Close box</a></p>
-        
-        <label for="name">e mail</label>
-
-        <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-        <input type="submit" value="enviar correo" />
-
-      </div>
-    </div>
-  </div>
-
-  <div id="wrapper">
-    <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');">Open popup box 1</a></p>
-  </div>
+  <script src="index.js"></script>
+  <script src="sketch.js"></script>
 
 
   </body>
