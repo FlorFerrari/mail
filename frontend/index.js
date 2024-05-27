@@ -1,3 +1,15 @@
+document.querySelector('.correo').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('container').style.display = 'block';
+});
+
+document.getElementById('close-btn').addEventListener('click', function() {
+    document.getElementById('container').style.display = 'none';
+});
+
+
+
+
 document.getElementById('sendEmailButton').addEventListener('click', async () => {
     const email = document.getElementById('email').value;
     const messageElement = document.getElementById('message');
