@@ -1,7 +1,7 @@
 let angle = 90; // Ángulo inicial
 let centerX, centerY; // Centro de la órbita
 
-let x = Math.floor(Math.random() * 4) + 1;
+let x = Math.floor(Math.random() * 5) + 1;
 
 console.log(x)
 
@@ -32,6 +32,7 @@ function setup() {
     
   }
 
+  
 function draw() {
   background(0);
   pointLight(255, 100, 200, -200, 0, 0);
@@ -101,7 +102,7 @@ function draw() {
 } else if (x == 2){ //--------------------------------------MUNDO 2
   
 function preload(){
-  vid = createVideo(['img/mundo2/video_esfera2.mp4']);  
+  vid = createVideo(['img/mundo2/segundomundo.mp4']);  
   vid.play()
   vid.loop();   
   vid.hide();
@@ -209,7 +210,7 @@ function mousePressed() {
   sonido.play(); // Inicia el sonido al hacer clic
 }
 
-  } else {
+  } else if (x == 4){
     let poe;
 let audio1;
 let audio2;
@@ -257,6 +258,32 @@ document.oncontextmenu = function () {
   return false;
 };
 
+
+  } else {
+    function preload(){
+      vid = createVideo(['img/mundo5/mundo5.mp4']);  
+      vid.play()
+      vid.loop();   
+      vid.hide();
+    }
+      function draw() {
+    
+        background(20);
+        pointLight(255, 100, 200, -200, 0, 0);
+        pointLight(170, 255, 0, 200, 0, 0);
+        specularMaterial(0);
+        noStroke();
+        orbitControl();
+      
+        //ESFERA
+        push();
+        ambientLight(255);
+        texture(vid);
+        box(1000);
+        pop();
+      
+        angle += 50;
+      }
   }
 
 
